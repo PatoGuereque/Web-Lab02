@@ -3,6 +3,40 @@
   <head>
     <style>
       /*    Escribe aqui tu codigo de CSS    */
+      .container {
+        display: inline;
+      }
+
+      .container > * {
+        float: left;
+      }
+
+      @media only screen and (min-width: 601px) {
+        .container > nav {
+          width: 20%;
+        }
+
+        .container > .section-container {
+          width: 60%;
+        }
+
+        .container > aside {
+          width: 20%;
+        }
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        width: 100%;
+        display: flow-root;
+      }
+
+      footer > p {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
     </style>
 
     <meta charset="UTF-8" />
